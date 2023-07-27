@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Establece la imagen de fondo */
+  background-image: url('img/111338.jpg');
+  /* Ajusta la imagen de fondo */
+  background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: contain;
+ height: 100%;
+ background-attachment: fixed;
+ background-color: #c00000;
+}
+
+/* Estilos para el menú sticky */
+
+.sticky-menu {
+  /* Estilos para el menú sticky */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.logo {
+  /* Estilos para el logo */
+  width: 120px;
+  height: 100px;
+  transition: transform 0.3s; /* Agrega una transición para suavizar el cambio de logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+nav ul li a:hover {
+  /* Estilos para el hover de los enlaces */
+}
+
+/* ... Estilos previos ... */
+
+/* Estilos para los dropdown combinados */
+.dropdown {
+  display: inline-block;
+  width: 25%; /* Ajusta el ancho de cada dropdown */
+  margin: 0 10px; /* Agrega margen entre los dropdown */
+  position: relative; /* Añadimos posición relativa para posicionar el contenido absoluto */
+}
+
+label {
+  font-family: "Arial Black", sans-serif;
+  color: white;
+  margin-bottom: 5px; /* Espacio entre el texto del label y el menú desplegable */
+}
+
+select {
+  font-family: "Arial Black", sans-serif;
+  color: white;
+  background-color: #007BFF; /* Color de fondo del menú desplegable */
+  border: 1px solid white; /* Borde blanco */
+  padding: 8px;
+  width: 100%;
+  position: relative; /* Añadimos posición relativa para posicionar el contenido absoluto */
+  appearance: none; /* Elimina el estilo nativo del menú desplegable */
+}
+
+/* Estilos para el contenido del dropdown */
+select option {
+  color: white;
+}
+
+/* Posicionamiento del contenido del dropdown */
+.dropdown select::-ms-expand {
+  display: none; /* Elimina el triángulo de flecha en IE */
+}
+
+.dropdown select::-webkit-scrollbar {
+  display: none; /* Elimina las barras de desplazamiento en Chrome y Safari */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #007BFF; /* Color de fondo del contenido del dropdown */
+  border: 1px solid white; /* Borde blanco */
+  min-width: 100%;
+  bottom: -100%; /* Posiciona el contenido debajo del botón */
+  left: 0;
+}
+
+/* Mostrar el contenido del dropdown al hacer hover sobre el botón */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ... Estilos adicionales ... */
+
+.result-board {
+  /* Estilos para el tablero de resultado */
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Centra los elementos verticalmente */
+  flex-wrap: wrap; /* Permite que los escudos se ajusten al ancho del contenedor */
+  height: 100vh; /* Ajusta la altura para ocupar toda la pantalla */
+}
+
+.shield {
+  /* Estilos para los escudos */
+  width: 250px;
+  height: 250px;
+  text-align: center; /* Centra el texto (nombre del equipo) debajo del escudo */
+  margin: 10px; /* Ajusta el margen entre los escudos y sus nombres */
+}
+
+.shield img {
+  display: block; /* Evita espacios en blanco debajo de las imágenes */
+}
+
+.team-name {
+  /* Estilos para los nombres de los equipos */
+  font-family: "Arial Black", sans-serif;
+  color: white;
+  margin: 5px 0; /* Espacio entre el escudo y el nombre del equipo */
+}
+
+.result-button {
+  /* Estilos para el contenedor de resultado y botón */
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de los elementos a columna */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-top: 20px; /* Ajusta el margen entre el resultado y el botón */
+}
+
+.result {
+  /* Estilos para el resultado */
+  font-size: 100px; /* Tamaño de la fuente del resultado */
+  font-family: "Arial Black", sans-serif; /* Fuente Arial Black */
+  color: white; /* Color blanco */
+  margin-bottom: 20px; /* Espacio inferior para separar del botón */
+  -webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+.video-button {
+  /* Estilos para el botón "Video" */
+}
+
+.video-button a {
+  /* Estilos para el enlace del botón "Video" */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+.scroll-down-arrow {
+  /* Estilos para la flecha hacia abajo */
+}
+
+/* Estilos para el dropdown combinado (debes implementarlo con JavaScript) */
+#dropdown-section {
+  /* Estilos para el dropdown combinado */
+}
+
+/* Estilos para el pre-footer */
+/* Estilos para el prefooter y el carrusel */
+.prefooter {
+  margin-top: 20px;
+  background-color: #333; /* Gris oscuro */
+  height: 70px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+ padding: 5px;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  animation: scroll 20s linear infinite; /* Animación para el carrusel */
+}
+
+.carousel-item {
+  width: 60px;
+  height: 60px;
+  filter: grayscale(100%); /* Convertir la imagen en blanco y negro */
+  transition: filter 0.3s ease; /* Transición para volver a color al hacer hover */
+}
+
+.carousel-item:hover {
+  filter: none; /* Volver a color al hacer hover */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 10px)); /* Mover el carrusel */
+  }
+}
+/* Estilos para el footer */
+.footer {
+  /* Estilos para el footer */
+}
+
+/* Estilos para los íconos de redes sociales (debes agregar los íconos apropiados) */
+.social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.social-icon img {
+  width: 30px; /* Ajusta el tamaño según tus preferencias */
+  height: 30px; /* Ajusta el tamaño según tus preferencias */
+  /* Agrega cualquier otro estilo deseado */
+}
