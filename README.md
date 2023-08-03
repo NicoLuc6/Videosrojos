@@ -1,2 +1,2 @@
 # Videosrojos
-videos de independeinte
+videos de independiente
