@@ -75,7 +75,7 @@ label {
 select {
   font-family: "Arial Black", sans-serif;
   color: white;
-  background-color: #007BFF; /* Color de fondo del menú desplegable */
+  background-color: #00157f; /* Color de fondo del menú desplegable */
   border: 1px solid white; /* Borde blanco */
   padding: 8px;
   width: 100%;
@@ -195,38 +195,71 @@ text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
   display: flex;
   align-items: center;
   overflow: hidden;
- padding: 5px;
+ padding-top: 5px;
+ width: 100%;
 }
+
 
 .carousel {
   display: flex;
   gap: 10px;
-  animation: scroll 20s linear infinite; /* Animación para el carrusel */
+  animation: scroll 50s linear infinite; /* Dirección inversa para el carrusel */
 }
 
 .carousel-item {
-  width: 60px;
-  height: 60px;
+  min-width: 50px;
+  height: 50px;
   filter: grayscale(100%); /* Convertir la imagen en blanco y negro */
-  transition: filter 0.3s ease; /* Transición para volver a color al hacer hover */
+  transition: filter 0.2s ease; /* Transición para volver a color al hacer hover */
 }
 
 .carousel-item:hover {
-  filter: none; /* Volver a color al hacer hover */
+  filter: none; /* Volver a color al hacer hover */ 
 }
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%); /* Inicia desde la derecha */
   }
   100% {
-    transform: translateX(calc(-100% - 10px)); /* Mover el carrusel */
+    transform: translateX(-100%); /* Se desplaza hacia la izquierda */
   }
 }
+
 /* Estilos para el footer */
-.footer {
-  /* Estilos para el footer */
+/* ... Estilos previos ... */
+
+/* Estilos para el footer */
+footer {
+  background-color: #333; /* Gris oscuro */
+  color: #fff; /* Texto en color blanco */
+  padding: 20px; /* Espaciado interno */
+  height: auto; /* Altura del 200% de la web */
+  position: relative; /* Agregamos position relative para posicionar la imagen */
 }
+
+.footer-content {
+  max-width: 12000px; /* Ancho máximo del contenido del footer */
+  margin: 0 auto; /* Centrar el contenido del footer */
+}
+
+.footer-image {
+  position: absolute; /* Posicionamos la imagen de forma absoluta */
+  top: 0; /* Alineamos la imagen en la parte superior del footer */
+  left: 0; /* Alineamos la imagen en la parte izquierda del footer */
+  width: 100%; /* Establecemos el ancho de la imagen al 100% del footer */
+  height: 400%; /* Establecemos la altura de la imagen al 100% del footer */
+  overflow: hidden; /* Ocultamos el contenido que exceda del footer */
+}
+
+.footer-image img {
+  object-fit: cover; /* Hacemos que la imagen se ajuste y cubra completamente el contenedor */
+  width: 100%; /* Establecemos el ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Establecemos la altura de la imagen al 100% del contenedor */
+}
+
+/* ... Estilos posteriores ... */
+
 
 /* Estilos para los íconos de redes sociales (debes agregar los íconos apropiados) */
 .social-icons a {
@@ -239,4 +272,50 @@ text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
   width: 30px; /* Ajusta el tamaño según tus preferencias */
   height: 30px; /* Ajusta el tamaño según tus preferencias */
   /* Agrega cualquier otro estilo deseado */
+}
+
+.content-container {
+  margin-top: 150px; /* Ajusta este valor para dejar espacio debajo del sticky menu */
+  padding: 20px;
+}
+
+.image-container {
+  text-align: center;
+}
+
+.image-container img {
+  width: 50%; /* Ajusta el ancho fijo de la imagen */
+  height: auto; /* La altura se ajustará automáticamente */
+}
+
+.video-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.options-container {
+  text-align: center;
+  margin-top: 20px;
+}
+.options-container a {
+  font-family: "arial black";
+  font-size: 20px;
+  margin-right: 20px;
+  color: white; /* Color del texto de las opciones */
+  text-decoration: none; /* Quita la subraya de los enlaces */
+  text-shadow: 4px 5px 2px black;
+}
+.options-container a:hover {
+  margin-right: 20px;
+  color: white; /* Color del texto de las opciones */
+  text-decoration: none; /* Quita la subraya de los enlaces */
+  text-shadow: 0px 0px 0px gray;
+}
+.year-container{
+    font-family: "arial black";
+  font-size: 20px;
+  margin-right: 20px;
+  color: white; /* Color del texto de las opciones */
+  text-decoration: none; /* Quita la subraya de los enlaces */
+  text-shadow: 4px 5px 2px black;
 }
