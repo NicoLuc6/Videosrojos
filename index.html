@@ -1,43 +1,25 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VideosRojos</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Club Atlético Independiente</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo CSS aquí -->
 </head>
-
 <body>
-  <!-- Menú Sticky -->
   <header class="sticky-menu">
-     <img src="img/Logo.png" alt="Logo" class="logo" id="logo">
-    <div class="social-icons">
-    <!-- Reemplaza los enlaces con imágenes -->
-    <a href="#" class="social-icon"><img src="img/facebook.png" alt="Facebook"></a>
-    <a href="#" class="social-icon"><img src="img/twitter.png" alt="Twitter"></a>
-    <a href="#" class="social-icon"><img src="img/instagram.png" alt="Instagram"></a>
-    <a href="#" class="social-icon"><img src="img/youtube.png" alt="YouTube"></a>
-  </div>
-  </header>
-    <!-- Tablero de resultado -->
-<section class="result-board">
-  <div class="shield left-shield">
-    <img src="img/esc/Central-Cordoba.png" alt="Escudo Izquierdo" width="250" height="250">
-    <p class="team-name">CENTRAL CORDOBA</p>
-  </div>
-  <div class="result-button">
-    <div class="result">0 - 1</div>
-    <div class="video-button">
-      <a href="ruta/pagina-video.html">Video</a>
+    <div class="logo">
+      <img src="img/logo-2.png" alt="Logo del club">
     </div>
-  </div>
-  <div class="shield right-shield">
-    <img src="img/Rojo.png" alt="Escudo Derecho" width="250" height="250">
-    <p class="team-name">INDEPENDIENTE</p>
-  </div>
-</section>
-  <!-- Dropdowns combinados -->
+    <div class="social-icons">
+      <a href="#"><img src="img/ig.png" alt="Instagram"></a>
+      <a href="#"><img src="img/tw.png" alt="Twitter"></a>
+      <a href="#"><img src="img/yt.png" alt="YouTube"></a>
+    </div>
+  </header>
+
+  <div class="background-image"></div>
+<div class="container">   
   <div class="dropdown">
     <label for="year">Año:</label>
     <select name="year" id="year">
@@ -104,7 +86,7 @@
       <option value="2023">2023</option>
     </select>
   </div>
-
+    
   <div class="dropdown">
     <label for="tournament">Torneo:</label>
     <select name="tournament" id="tournament">
@@ -118,169 +100,33 @@
       <option value="">Selecciona un rival</option>
     </select>
   </div>
-<!-- Pre-footer -->
-<div class="prefooter">
-  <div class="carousel">
-    <img src="img/esc/Aldosivi.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Aguilas-Doradas%20(COL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Ajax%20(HOL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Alianza-Coronel-Moldes.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Alianza-Lima.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/All-Boys.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Almagro.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Almirante-Brown.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Argentinos.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Arsenal(ING).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Arsenal.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atl-Espa%C3%B1ol(MEX).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atl-Madrid%20(ESP).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atl-Nacioanl%20(COL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atl-Rafaela.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atl-Tucuman.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atlanta.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atlas.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Atletico%20tachira%20.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Banfield.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Belgrano.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Binacional(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Boca-Unidos.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Boca.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Brown-Adrogue.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Camioneros.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Central-Ballester.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Central-Cordoba.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Cerezo-Ozaka%20(JPN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Chacarita.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Chaco-For-Ever.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Chapecoense%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Cienciano%20(PER).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Colegiales.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Colo-Colo%20(CHI).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Colon.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Corinthians%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Crucero-del-Norte.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Cruzeiro(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Defensa-y-justicia.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Defensor-sporting%20(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Armenio.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Espa%C3%B1ol.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Lara%20(VEN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Mandiy%C3%BA.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Quito(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Dep-Tachira%20(VEN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Deportes%20Tolima%20(COL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Deportes-Iquique(CHI).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/DOCK-SUD.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Douglas-Haig.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/El-Nacional%20(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Estudiantes.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/ferro.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Flamengo(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/flandria.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/GELP.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Gimnasia-y-Esgrima-Jujuy.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Gimnasia-y-Tiro.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Godoy-Cruz.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Goias(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Gremio(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Grupo-Univeristario-Tandil.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Huracan-3-Arroyos.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Huracan-Corrientes.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Huracan.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Indepte-del-Valle%20(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Indepte-Rivadabia.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/INDEPTE-SANTA-FE(COL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Instituto.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Inter(ITA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Internacinal(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Juventus(ITA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Juvilo-Iwata(JPN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Kimberly.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Lanus.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Liberpool%20(ING).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Libertad%20(PAR).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Liga-Dep-Universitaria(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Liverpool%20(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Los-Andes.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Millonarios%20(COL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Montevideo-City-Torque(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Nacional%20(PAR).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Nacional%20(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Napoli%20(ITA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Newells.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Nueva-Chicago.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/OLIMPIA%20(PAR).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Olimpo.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Palmeiras%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Patronato.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Penarol%20(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Pepeganga%20(VEN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Platense.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Quilmes.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/RACING-CDBA.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Racing.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/River.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Roma%20(ITA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Rosario%20Central.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/San-Lorenzo.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/San-Martin-SJ.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/San-Martin-TUC.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/San-Telmo.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Santa-Marina.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Santos%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/SAO-CAETANO%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/SAO-PAULO%20(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Sarmiento.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Sportivo-Belgrano.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/TALLERES-RE.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Talleres.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Temperley.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Tigre.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Tiro-Federal.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Tristan-Suarez.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/U-Catolica%20(CHI).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/U-Catolica(ECU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Union-Espa%C3%B1ola%20(CHI).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Union.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Universitario%20(PER).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Velez.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Ventura-County-Fusion(USA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Villa-San-Carlos.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Bahia(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Barracas-Central.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Ceara(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Central-Norte.png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Cerro-Porte%C3%B1o(PAR).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Everton(CHI).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Fenix(URU).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Fortaleza(BRA).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Gral-Caballero(PAR).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Guabira(BOL).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/La-Guaira(VEN).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Sportivo-Luque%C3%B1o(PER).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Tigres(MEX).png" alt="Rival 3" class="carousel-item" />
-    <img src="img/esc/Villa-Mitre.png" alt="Rival 3" class="carousel-item" />
-    <!-- Agrega las imágenes en blanco y negro de los demás rivales -->
+</div>
+<div class="gral">
+    <section class="result-board">
+  <div class="shield left-shield">
+    <img src="img/esc/Central-Cordoba.png" alt="Escudo Izquierdo" width="250" height="250">
+    <p class="team-name">CENTRAL CORDOBA</p>
   </div>
+  <div class="result-button">
+    <div class="result">0 - 1</div>
+    <div class="video-button">
+      <a href="ruta/pagina-video.html">Video</a>
+    </div>
+  </div>
+  <div class="shield right-shield">
+    <img src="img/Rojo.png" alt="Escudo Derecho" width="250" height="250">
+    <p class="team-name">INDEPENDIENTE</p>
+  </div>
+</section>
 </div>
 
-  <!-- Footer -->
- <footer>
-    <div class="footer-content">
-      <!-- Contenido del footer, por ejemplo: -->
-      <p>Contacto: ejemplo@equipo.com</p>
-      <p>Teléfono: +1 234 567 890</p>
-    </div>
-    <div class="footer-image">
-      <img src="img/footer.jpg" alt="Pie de página" />
-    </div>
+
+  <!-- Resto del contenido de la página -->
+
+  <footer>
+
   </footer>
-  <!-- ... Código posterior ... -->
 
-  <script src="script2.js"></script>
+  <script src="script.js"></script> <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
-
 </html>
-
-<script>
-</script>

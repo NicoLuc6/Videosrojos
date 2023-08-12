@@ -1,118 +1,89 @@
+/* Estilos generales */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  /* Establece la imagen de fondo */
-  background-image: url('img/111338.jpg');
-  /* Ajusta la imagen de fondo */
-  background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- background-size: contain;
- height: 100%;
- background-attachment: fixed;
- background-color: #c00000;
+  overflow: hidden;
 }
 
-/* Estilos para el menú sticky */
-
-.sticky-menu {
-  /* Estilos para el menú sticky */
-  position: fixed;
+/* Estilo para el fondo de pantalla */
+.background-image {
+  background-image: url('img/fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Estilos para el encabezado sticky */
+.sticky-menu {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  z-index: 100;
-}
-
-.logo {
-  /* Estilos para el logo */
-  width: 120px;
-  height: 100px;
-  transition: transform 0.3s; /* Agrega una transición para suavizar el cambio de logo */
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  padding: 20px;
+  transition: background-color 0.3s;
 }
 
-nav ul li {
-  margin-right: 20px;
+.sticky-menu .logo img {
+  width: 200px;
+  height: auto;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
+.social-icons {
+  display: flex;
+  gap: 10px;
 }
 
-nav ul li a:hover {
-  /* Estilos para el hover de los enlaces */
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  transition: width 0.3s, height 0.3s;
 }
 
-/* ... Estilos previos ... */
+/* Cambios al hacer scroll */
+.sticky-menu.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+}
 
-/* Estilos para los dropdown combinados */
+.sticky-menu.scrolled .logo img {
+  width: 80px;
+}
+
+.sticky-menu.scrolled .social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
 .dropdown {
   display: inline-block;
-  width: 25%; /* Ajusta el ancho de cada dropdown */
-  margin: 0 10px; /* Agrega margen entre los dropdown */
-  position: relative; /* Añadimos posición relativa para posicionar el contenido absoluto */
+  margin: 10px;
 }
 
 label {
-  font-family: "Arial Black", sans-serif;
+  font-family: Arial Black, Arial, sans-serif;
   color: white;
-  margin-bottom: 5px; /* Espacio entre el texto del label y el menú desplegable */
+  margin-right: 5px;
 }
 
 select {
-  font-family: "Arial Black", sans-serif;
+  font-family: Arial Black, Arial, sans-serif;
   color: white;
-  background-color: #00157f; /* Color de fondo del menú desplegable */
-  border: 1px solid white; /* Borde blanco */
-  padding: 8px;
-  width: 100%;
-  position: relative; /* Añadimos posición relativa para posicionar el contenido absoluto */
-  appearance: none; /* Elimina el estilo nativo del menú desplegable */
+  background-color: darkblue;
+  height: 30px;
+  border: none;
+  padding: 2px 10px;
 }
-
-/* Estilos para el contenido del dropdown */
-select option {
-  color: white;
-}
-
-/* Posicionamiento del contenido del dropdown */
-.dropdown select::-ms-expand {
-  display: none; /* Elimina el triángulo de flecha en IE */
-}
-
-.dropdown select::-webkit-scrollbar {
-  display: none; /* Elimina las barras de desplazamiento en Chrome y Safari */
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #007BFF; /* Color de fondo del contenido del dropdown */
-  border: 1px solid white; /* Borde blanco */
-  min-width: 100%;
-  bottom: -100%; /* Posiciona el contenido debajo del botón */
-  left: 0;
-}
-
-/* Mostrar el contenido del dropdown al hacer hover sobre el botón */
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* ... Estilos adicionales ... */
 
 .result-board {
   /* Estilos para el tablero de resultado */
@@ -175,124 +146,38 @@ text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
   text-decoration: none;
   border-radius: 5px;
 }
-
-
-.scroll-down-arrow {
-  /* Estilos para la flecha hacia abajo */
-}
-
-/* Estilos para el dropdown combinado (debes implementarlo con JavaScript) */
-#dropdown-section {
-  /* Estilos para el dropdown combinado */
-}
-
-/* Estilos para el pre-footer */
-/* Estilos para el prefooter y el carrusel */
-.prefooter {
-  margin-top: 20px;
-  background-color: #333; /* Gris oscuro */
-  height: 70px;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
- padding-top: 5px;
- width: 100%;
-}
-
-
-.carousel {
-  display: flex;
-  gap: 10px;
-  animation: scroll 50s linear infinite; /* Dirección inversa para el carrusel */
-}
-
-.carousel-item {
-  min-width: 50px;
-  height: 50px;
-  filter: grayscale(100%); /* Convertir la imagen en blanco y negro */
-  transition: filter 0.2s ease; /* Transición para volver a color al hacer hover */
-}
-
-.carousel-item:hover {
-  filter: none; /* Volver a color al hacer hover */ 
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%); /* Inicia desde la derecha */
-  }
-  100% {
-    transform: translateX(-100%); /* Se desplaza hacia la izquierda */
-  }
-}
-
-/* Estilos para el footer */
-/* ... Estilos previos ... */
-
-/* Estilos para el footer */
-footer {
-  background-color: #333; /* Gris oscuro */
-  color: #fff; /* Texto en color blanco */
-  padding: 20px; /* Espaciado interno */
-  height: auto; /* Altura del 200% de la web */
-  position: relative; /* Agregamos position relative para posicionar la imagen */
-}
-
-.footer-content {
-  max-width: 12000px; /* Ancho máximo del contenido del footer */
-  margin: 0 auto; /* Centrar el contenido del footer */
-}
-
-.footer-image {
-  position: absolute; /* Posicionamos la imagen de forma absoluta */
-  top: 0; /* Alineamos la imagen en la parte superior del footer */
-  left: 0; /* Alineamos la imagen en la parte izquierda del footer */
-  width: 100%; /* Establecemos el ancho de la imagen al 100% del footer */
-  height: 400%; /* Establecemos la altura de la imagen al 100% del footer */
-  overflow: hidden; /* Ocultamos el contenido que exceda del footer */
-}
-
-.footer-image img {
-  object-fit: cover; /* Hacemos que la imagen se ajuste y cubra completamente el contenedor */
-  width: 100%; /* Establecemos el ancho de la imagen al 100% del contenedor */
-  height: 100%; /* Establecemos la altura de la imagen al 100% del contenedor */
-}
-
-/* ... Estilos posteriores ... */
-
-
-/* Estilos para los íconos de redes sociales (debes agregar los íconos apropiados) */
-.social-icons a {
+.video-button a:hover{
+  /* Estilos para el enlace del botón "Video" */
   display: inline-block;
-  margin-left: 10px;
+  padding: 10px 20px;
+  background-color:darkblue; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
   text-decoration: none;
-  color: #333;
-}
-.social-icon img {
-  width: 30px; /* Ajusta el tamaño según tus preferencias */
-  height: 30px; /* Ajusta el tamaño según tus preferencias */
-  /* Agrega cualquier otro estilo deseado */
+  border-radius: 5px;
 }
 
-.content-container {
-  margin-top: 150px; /* Ajusta este valor para dejar espacio debajo del sticky menu */
+/* Estilos para el footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
   padding: 20px;
 }
 
-.image-container {
-  text-align: center;
+/* Estilos para los enlaces del footer */
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-.image-container img {
-  width: 50%; /* Ajusta el ancho fijo de la imagen */
-  height: auto; /* La altura se ajustará automáticamente */
+.footer a:hover {
+  text-decoration: underline;
 }
-
 .video-container {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 70px;
 }
-
 .options-container {
   text-align: center;
   margin-top: 20px;
@@ -310,12 +195,4 @@ footer {
   color: white; /* Color del texto de las opciones */
   text-decoration: none; /* Quita la subraya de los enlaces */
   text-shadow: 0px 0px 0px gray;
-}
-.year-container{
-    font-family: "arial black";
-  font-size: 20px;
-  margin-right: 20px;
-  color: white; /* Color del texto de las opciones */
-  text-decoration: none; /* Quita la subraya de los enlaces */
-  text-shadow: 4px 5px 2px black;
 }
