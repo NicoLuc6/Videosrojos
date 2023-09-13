@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.barra-superior {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background: none;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    padding: 10px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.barra-superior h1 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.subtitulo {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.escudo {
+    max-width: 80px;
+    height: 60px;
+    margin: 10px;
+}
+
+.escudo-grande {
+    max-width: 250px;
+    margin: 10px;
+}
+
+.contenido {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado p {
+    font-size: 60px; /* Tamaño de fuente más grande para el marcador */
+    margin: 0 10px;
+}
+
+.resultado-texto {
+    font-size: 36px; /* Tamaño de fuente para el texto del marcador */
+}
+
+.video-link {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* Color del botón (puedes cambiarlo) */
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse (puedes cambiarlo) */
+}

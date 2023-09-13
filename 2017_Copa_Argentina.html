@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPA ARGENTINA 2017</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+    <h1>COPA ARGENTINA 2017</h1>
+    <!-- Reproductor de Video en la Cabecera -->
+    <iframe id="video-player" src=""></iframe>
+    
+    <!-- Lista de Reproducción -->
+    <div id="video-list">
+        <div class="video-item">
+            <img class="video-thumbnail" src="img/esc/Atl-Tucuman.png">
+            <span class="video-title">2017 COPA ARGENTINA vs ATLÉTICO TUCUMÁN</span>
+            <button class="play-button" data-video-url="https://youtu.be/OGK7PLuvJJc">Reproducir</button>
+        </div>
+        <div class="video-item">
+            <img class="video-thumbnail" src="img/esc/Camioneros.png">
+            <span class="video-title">2017 COPA ARGENTINA vs CAMIONEROS</span>
+            <button class="play-button" data-video-url="https://youtu.be/wRCXkFbr6cw">Reproducir</button>
+        </div>
+        <!-- Repite este bloque para cada video en tu lista -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
